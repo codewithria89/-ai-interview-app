@@ -3,8 +3,7 @@
 **Goal:** An AI-powered application designed to simulate a full-stack (React/Node) job interview, featuring a Candidate Chat interface and an Interviewer Dashboard.
 
 ## 🚀 Live Demo
-**[CLICK HERE TO VIEW THE LIVE APPLICATION]**
-*(You will replace this line with your Vercel/Netlify link in Step 4)*
+(https://ai-interview-app-chi.vercel.app/)
 
 ## ✨ Key Features Implemented
 
