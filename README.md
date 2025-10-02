@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# AI-Powered Interview Assistant (Swipe Assignment)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Goal:** An AI-powered application designed to simulate a full-stack (React/Node) job interview, featuring a Candidate Chat interface and an Interviewer Dashboard.
 
-## Available Scripts
+## 🚀 Live Demo
+**[CLICK HERE TO VIEW THE LIVE APPLICATION]**
+*(You will replace this line with your Vercel/Netlify link in Step 4)*
 
-In the project directory, you can run:
+## ✨ Key Features Implemented
 
-### `npm start`
+The application successfully meets all core requirements:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Feature Area | Implementation Details |
+| :--- | :--- |
+| **Resume Handling** | Supports **PDF** and **DOCX** upload. Extracts **Name**, **Email**, and **Phone**. |
+| **Missing Fields Flow** | Chatbot dynamically prompts for any missing fields before the interview starts. |
+| **Interview Logic** | Runs a 6-question interview (2 Easy, 2 Medium, 2 Hard). Questions are generated dynamically for a Full-Stack role. |
+| **Timers & Auto-Submit** | Easy: 20s, Medium: 60s, Hard: 120s. Answers auto-submit when the timer expires. |
+| **Data Persistence** | Uses **[Your Persistence Method, e.g., Redux-Persist/IndexedDB]** for complete local data storage. |
+| **Pause/Resume** | Sessions restore automatically upon refresh/reopening, displaying a "Welcome Back" modal. |
+| **Interviewer Dashboard** | Lists all candidates ordered by **Final Score**. Includes **Search** and **Sort** functionality. |
+| **Detailed View** | Clicking a candidate shows their profile, full chat history, and the **Final AI Summary**. |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Tech Stack
 
-### `npm test`
+* **Frontend:** React (version **[Your React Version]**)
+* **State Management & Persistence:** **[Your State Management, e.g., Redux/Zustand]** + **[Your Persistence Library, e.g., Redux-Persist]**
+* **UI/Styling:** **[Your UI Library, e.g., Ant Design / shadcn / Tailwind CSS]**
+* **Resume Parsing Logic:** *Briefly mention how you handled PDF/DOCX parsing (e.g., a specific library or a simulated/placeholder function).*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Installation and Local Setup
 
-### `npm run build`
+Follow these steps to run the project on your local machine:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/YourUsername/ai-interview-new.git](https://github.com/YourUsername/ai-interview-new.git)
+    cd ai-interview-new
+    ```
+2.  **Install Dependencies:**
+    ```bash
+    npm install
+    # OR
+    yarn install
+    ```
+3.  **Run the Application:**
+    ```bash
+    npm start
+    # OR
+    yarn start
+    ```
+    The application should open automatically at `http://localhost:3000`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧠 Design Decisions & Challenges (Optional but recommended)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **Persistence:** We chose **[State Library]** because it simplifies the state structure, and **[Persistence Library]** made local storage seamless, ensuring timers and progress are never lost.
+* **AI Simulation:** The AI logic is simulated using static/mock data for questions and judgment to focus on the core React architecture and state management required by the assignment.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
