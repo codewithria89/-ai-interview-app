@@ -6,7 +6,6 @@
 (https://ai-interview-app-chi.vercel.app/)
 
 ## ✨ Key Features Implemented
-
 The application successfully meets all core requirements:
 
 | Feature Area | Implementation Details |
